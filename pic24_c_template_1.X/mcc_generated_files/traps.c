@@ -92,31 +92,10 @@ inline static void use_failsafe_stack(void)
 }
 
 /** Oscillator Fail Trap vector**/
-void ERROR_HANDLER _OscillatorFail(void)
-{
-    INTCON1bits.OSCFAIL = 0;  //Clear the trap flag
-    TRAPS_halt_on_error(TRAPS_OSC_FAIL);
-}
+
 /** Stack Error Trap Vector**/
-void ERROR_HANDLER _StackError(void)
-{
-    /* We use a failsafe stack: the presence of a stack-pointer error
-     * means that we cannot trust the stack to operate correctly unless
-     * we set the stack pointer to a safe place.
-     */
-    use_failsafe_stack(); 
-    INTCON1bits.STKERR = 0;  //Clear the trap flag
-    TRAPS_halt_on_error(TRAPS_STACK_ERR);
-}
+
 /** Address Error Trap Vector**/
-void ERROR_HANDLER _AddressError(void)
-{
-    INTCON1bits.ADDRERR = 0;  //Clear the trap flag
-    TRAPS_halt_on_error(TRAPS_ADDRESS_ERR);
-}
+
 /** Math Error Trap Vector**/
-void ERROR_HANDLER _MathError(void)
-{
-    INTCON1bits.MATHERR = 0;  //Clear the trap flag
-    TRAPS_halt_on_error(TRAPS_MATH_ERR);
-}
+

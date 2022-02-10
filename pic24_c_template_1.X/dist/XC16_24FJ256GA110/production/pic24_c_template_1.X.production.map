@@ -1,0 +1,67 @@
+Microchip Technology Inc, v1.70 (B)
+
+Tool Name:
+  d:\program files\microchip\xc16\v1.70\bin\bin\..\bin/elf-ld.exe
+
+Command:
+  -p24FV16KM202 \
+  --mdfp=D:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC24F-KA-KL-KM_DFP/1.4.83/xc16 \
+  -o \
+  dist/XC16_24FJ256GA110/production/pic24_c_template_1.X.production.elf \
+  -Ld:/program files/microchip/xc16/v1.70/bin/bin/.. \
+  -LD:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC24F-KA-KL-KM_DFP/1.4.83/xc16/bin/../support/PIC24F/gld \
+  -Ld:/program files/microchip/xc16/v1.70/bin/bin/../../lib \
+  -Ld:/program files/microchip/xc16/v1.70/bin/bin/../../support/PIC24E/gld \
+  -Ld:/program files/microchip/xc16/v1.70/bin/bin/../../support/PIC24F/gld \
+  -Ld:/program files/microchip/xc16/v1.70/bin/bin/../../support/PIC24H/gld \
+  -Ld:/program files/microchip/xc16/v1.70/bin/bin/../../support/dsPIC30F/gld \
+  -Ld:/program files/microchip/xc16/v1.70/bin/bin/../../support/dsPIC33C/gld \
+  -Ld:/program files/microchip/xc16/v1.70/bin/bin/../../support/dsPIC33E/gld \
+  -Ld:/program files/microchip/xc16/v1.70/bin/bin/../../support/dsPIC33F/gld \
+  build/XC16_24FJ256GA110/production/mcc_generated_files/interrupt_manager.o \
+  build/XC16_24FJ256GA110/production/mcc_generated_files/system.o \
+  build/XC16_24FJ256GA110/production/mcc_generated_files/traps.o \
+  build/XC16_24FJ256GA110/production/mcc_generated_files/clock.o \
+  build/XC16_24FJ256GA110/production/mcc_generated_files/mcc.o \
+  build/XC16_24FJ256GA110/production/mcc_generated_files/pin_manager.o \
+  build/XC16_24FJ256GA110/production/configuration_bits.o \
+  build/XC16_24FJ256GA110/production/interrupts.o \
+  build/XC16_24FJ256GA110/production/main.o \
+  build/XC16_24FJ256GA110/production/system.o \
+  build/XC16_24FJ256GA110/production/traps.o \
+  build/XC16_24FJ256GA110/production/user.o \
+  --defsym=__MPLAB_BUILD=1 \
+  -Tp24FV16KM202.gld.00 \
+  --stack=16 \
+  --check-sections \
+  --data-init \
+  --pack-data \
+  --handles \
+  --isr \
+  --no-gc-sections \
+  --fill-upper=0 \
+  --stackguard=16 \
+  --no-force-link \
+  --smart-io \
+  -Map=dist/XC16_24FJ256GA110/production/pic24_c_template_1.X.production.map \
+  --report-mem \
+  --memorysummary \
+  dist/XC16_24FJ256GA110/production/memoryfile.xml \
+  -start-group \
+  --library=pic30-elf \
+  --library=m-elf \
+  --library=c-elf \
+  -end-group \
+
+
+Optional library libpPIC24Fxxx.a not found
+Archive member included because of file (symbol)
+
+d:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o)
+                              (__resetPRI)
+d:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libpic30-elf.a(data_init_standard.o)
+                              d:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libpic30-elf.a(crt0_standard.o) (__data_init_standard)
+d:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libpic30-elf.a(crt_start_mode_normal.eo)
+                              (__crt_start_mode_normal)
+d:/program files/microchip/xc16/v1.70/bin/bin/../../lib\libpic30-elf.a(delay32.eo)
+                              build/XC16_24FJ256GA110/production/main.o (___delay32)

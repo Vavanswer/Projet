@@ -57,7 +57,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="CLKPinsInput"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="CLKPinsOutput"/>
@@ -93,7 +93,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="ClockSource"/>
-         <value>Primary Oscillator</value>
+         <value>External Clock</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="ClockSwitching"/>
@@ -273,11 +273,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="OSCPinsInput"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="OSCPinsOutput"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="PllClock"/>
@@ -1573,7 +1573,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="MSSP1" registerAlias="SSPSTAT"/>
-         <value>0</value>
+         <value>128</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MSSP1" registerAlias="BCLI" settingAlias="context"/>
@@ -1581,7 +1581,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MSSP1" registerAlias="BCLI" settingAlias="enable"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MSSP1" registerAlias="BCLI" settingAlias="flag"/>
@@ -1689,7 +1689,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MSSP1" registerAlias="SSPI" settingAlias="enable"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MSSP1" registerAlias="SSPI" settingAlias="flag"/>
@@ -1729,7 +1729,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MSSP1" registerAlias="SSPSTAT" settingAlias="SMP"/>
-         <value>High Speed</value>
+         <value>Standard Speed</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="MSSP1" registerAlias="SSPSTAT" settingAlias="UA"/>
@@ -3629,7 +3629,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ANSA"/>
-         <value>19</value>
+         <value>27</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ANSB"/>
@@ -3657,7 +3657,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="CNPU2"/>
-         <value>96</value>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="LATA"/>
@@ -3701,7 +3701,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANSA" settingAlias="ANSELA3"/>
-         <value>digital</value>
+         <value>analog</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANSA" settingAlias="ANSELA4"/>
@@ -4013,11 +4013,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="CNPU2" settingAlias="CN21PUE"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="CNPU2" settingAlias="CN22PUE"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="CNPU2" settingAlias="CN23PUE"/>
@@ -4805,7 +4805,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="System Module" registerAlias="FOSC"/>
-         <value>186</value>
+         <value>184</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="System Module" registerAlias="FOSCSEL"/>
@@ -4853,7 +4853,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="FOSC" settingAlias="POSCMOD"/>
-         <value>HS</value>
+         <value>EC</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="FOSC" settingAlias="SOSCSEL"/>
@@ -4938,12 +4938,12 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
-         <file>mcc_generated_files\mcc.h</file>
-         <hash>5b62c9f3cde59135fe68e41d6144ff54c9873a8222e0ca41c66bd63828994d80</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\interrupt_manager.h</file>
          <hash>708f323f08fb2fec70b80bbd863d9070d291bd39272c280a3a787e62881e65cf</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>5b62c9f3cde59135fe68e41d6144ff54c9873a8222e0ca41c66bd63828994d80</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\clock.c</file>
@@ -4958,44 +4958,44 @@
          <hash>c465ae3a0a1cda735ade4b665ff3194b726115927ba1d52c691719447eefda8e</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>034b2005179a83d2a9c7be927969bfd338062391f4cb2809a1b37878858952a6</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\system.h</file>
          <hash>4e5516b735aea8193e0f67e8ae1f1e3ddb1994750dbc9d338791e10fc7919ee3</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\pin_manager.c</file>
-         <hash>15071bbf65258cacc040d6bc3c638661657663cc141c680b6d16a370a1d7b733</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\mssp1_i2c.c</file>
-         <hash>731206677c65e94944494eaa1fc82c8bca3b7b829989c9872f1f912a04ee0c30</hash>
+         <hash>0d6e49ba175df1e17ca702bcfd08c9a6182a71d55bf7f676eb591b8d05d5d321</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\system.c</file>
-         <hash>fa41b652f3242ab78e16f43abbc0d8be2d0c6285e0da28bf04ce25f3223d61fc</hash>
+         <hash>b8b75b4f9925dbcafdd6e13784450adfe57e6612fa4268acea5d910b5650fc50</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\traps.c</file>
          <hash>ce80ddc8f012c960308aed237e0c4551556ae8518f16bd28a1c15d5ddace01a0</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\clock.h</file>
-         <hash>bc76295fa49f49c5e4485defca57ff6ae13cacd69c8d74bdf6ebd42a898dcdff</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\traps.h</file>
          <hash>86c9603008efbbf3d64dbef6497501e8c0b4c4a20c53eef5f8aa99e504e51392</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\clock.h</file>
+         <hash>bc76295fa49f49c5e4485defca57ff6ae13cacd69c8d74bdf6ebd42a898dcdff</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mssp1_i2c.h</file>
          <hash>0b27b966836209bea1c6d1882531d74fd5645aae020b6e18c72543d3214934ac</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.c</file>
-         <hash>8e92478d472076e93b49f10876e18d7971d55b408a432f83689cc0fd8d1d14ef</hash>
+         <file>mcc_generated_files\interrupt_manager.c</file>
+         <hash>7c378cb0184f1e71687eec37918e0e7ba5edb9d6097877a7e968cde83891e64c</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\interrupt_manager.c</file>
-         <hash>b54e977ff0f99d3ea994f3cc9e339dbd594cbe1fcce52ed3e17d9a130b648b2a</hash>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>8e92478d472076e93b49f10876e18d7971d55b408a432f83689cc0fd8d1d14ef</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

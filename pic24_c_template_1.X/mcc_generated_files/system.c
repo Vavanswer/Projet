@@ -53,14 +53,14 @@
 #pragma config GCP = OFF    //General Segment Code Protect->No Protection
 
 // FOSCSEL
-#pragma config FNOSC = FRCDIV    //Oscillator Select->8MHz FRC oscillator With Postscaler (FRCDIV)
+#pragma config FNOSC = PRI    //Oscillator Select->Primary Oscillator (XT, HS, EC)
 #pragma config SOSCSRC = ANA    //SOSC Source Type->Analog Mode for use with crystal
 #pragma config LPRCSEL = HP    //LPRC Oscillator Power and Accuracy->High Power, High Accuracy Mode
 #pragma config IESO = OFF    //Internal External Switch Over bit->Internal External Switchover mode disabled (Two-speed Start-up disabled)
 
 // FOSC
-#pragma config POSCMOD = NONE    //Primary Oscillator Configuration bits->Primary oscillator disabled
-#pragma config OSCIOFNC = CLKO    //CLKO Enable Configuration bit->CLKO output signal enabled
+#pragma config POSCMOD = EC    //Primary Oscillator Configuration bits->External clock mode selected
+#pragma config OSCIOFNC = IO    //CLKO Enable Configuration bit->Port I/O enabled (CLKO disabled)
 #pragma config POSCFREQ = HS    //Primary Oscillator Frequency Range Configuration bits->Primary oscillator/external clock input frequency greater than 8MHz
 #pragma config SOSCSEL = SOSCHP    //SOSC Power Selection Configuration bits->Secondary Oscillator configured for high-power operation
 #pragma config FCKSM = CSDCMD    //Clock Switching and Monitor Selection->Both Clock Switching and Fail-safe Clock Monitor are disabled
@@ -87,12 +87,14 @@
 #include "system.h"
 #include "interrupt_manager.h"
 #include "traps.h"
+#include "mssp1_i2c.h"
 
 void SYSTEM_Initialize(void)
 {
     PIN_MANAGER_Initialize();
-    CLOCK_Initialize();
     INTERRUPT_Initialize();
+    CLOCK_Initialize();
+    MSSP1_I2C_Initialize();
 }
 
 /**

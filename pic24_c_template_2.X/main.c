@@ -1,67 +1,68 @@
-/******************************************************************************/
-/* Files to Include                                                           */
-/******************************************************************************/
+/**
+  Generated main.c file from MPLAB Code Configurator
 
-/* Device header file */
-#if defined(__XC16__)
-    #include <xc.h>
-#elif defined(__C30__)
-    #if defined(__PIC24E__)
-    	#include <p24Exxxx.h>
-    #elif defined (__PIC24F__)||defined (__PIC24FK__)
-	#include <p24Fxxxx.h>
-    #elif defined(__PIC24H__)
-	#include <p24Hxxxx.h>
-    #endif
-#endif
+  @Company
+    Microchip Technology Inc.
 
-#include <stdint.h>        /* Includes uint16_t definition                    */
-#include <stdbool.h>       /* Includes true/false definition                  */
+  @File Name
+    main.c
 
-#include "system.h"        /* System funct/params, like osc/peripheral config */
-#include "user.h"          /* User funct/params, such as InitApp              */
-#include <libpic30.h>
-/******************************************************************************/
-/* Global Variable Declaration                                                */
-/******************************************************************************/
+  @Summary
+    This is the generated main.c using PIC24 / dsPIC33 / PIC32MM MCUs.
 
-/* i.e. uint16_t <variable_name>; */
+  @Description
+    This source file provides main entry point for system initialization and application code development.
+    Generation Information :
+        Product Revision  :  PIC24 / dsPIC33 / PIC32MM MCUs - 1.171.0
+        Device            :  PIC24FV16KM202
+    The generated drivers are tested against the following:
+        Compiler          :  XC16 v1.70
+        MPLAB 	          :  MPLAB X v5.50
+*/
 
-/******************************************************************************/
-/* Main Program                                                               */
-/******************************************************************************/
+/*
+    (c) 2020 Microchip Technology Inc. and its subsidiaries. You may use this
+    software and any derivatives exclusively with Microchip products.
 
-int16_t main(void)
+    THIS SOFTWARE IS SUPPLIED BY MICROCHIP "AS IS". NO WARRANTIES, WHETHER
+    EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS SOFTWARE, INCLUDING ANY IMPLIED
+    WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A
+    PARTICULAR PURPOSE, OR ITS INTERACTION WITH MICROCHIP PRODUCTS, COMBINATION
+    WITH ANY OTHER PRODUCTS, OR USE IN ANY APPLICATION.
+
+    IN NO EVENT WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE,
+    INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY KIND
+    WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF MICROCHIP HAS
+    BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE FORESEEABLE. TO THE
+    FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
+    ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
+    THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
+
+    MICROCHIP PROVIDES THIS SOFTWARE CONDITIONALLY UPON YOUR ACCEPTANCE OF THESE
+    TERMS.
+*/
+
+/**
+  Section: Included Files
+*/
+#include "mcc_generated_files/system.h"
+
+/*
+                         Main application
+ */
+int main(void)
 {
+    // initialize the device
+    SYSTEM_Initialize();
 
-    /* Configure the oscillator for the device */
-    ConfigureOscillator();
-
-    /* Initialize IO ports and peripherals */
-    InitApp();
-
-    /* TODO <INSERT USER APPLICATION CODE HERE> */
-    
-    InitLED(); //configure the LED 
-
-    InitPWM(); //configure the PWM
-    
-    InitPWM2(); //configure the PWM
-
-    while(1)
+    while (1)
     {
-        LATAbits.LATA0 = 1;
-        LATAbits.LATA2 = 0; //active la broche RA2
-        LATAbits.LATA1 = 1;
-        LATAbits.LATA7 = 0;
-
-        //PORTAbits.RA0=0;
-        __delay_ms(1000);    
-        LATAbits.LATA0 = 0;
-        LATAbits.LATA2 = 1; //active la broche RA2
-        LATAbits.LATA1 = 0;
-        LATAbits.LATA7 = 1;
-
-        __delay_ms(1000);
+        // Add your application code
     }
+
+    return 1;
 }
+/**
+ End of File
+*/
+

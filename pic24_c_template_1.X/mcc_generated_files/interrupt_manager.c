@@ -52,11 +52,5 @@
 */
 void INTERRUPT_Initialize (void)
 {
-    //    BCLI: MSSP1BC - MSSP1 Bus Collision
-    //    Priority: 1
-        IPC4bits.BCL1IP = 1;
-    //    SSPI: MSSP1 - I2C/SPI Interrupt
-    //    Priority: 1
-        IPC4bits.SSP1IP = 1;
 
 }
